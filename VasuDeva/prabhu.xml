@@ -1,0 +1,8 @@
+<suite name="Vasu">
+  <test name="smoke" >
+    <classes>
+      <class name="com.vasu.testng.AnnotationsTest"/>
+      <class name="com.vasu.testng.AnnotationsTest1"/>
+    </classes>
+  </test>
+</suite>

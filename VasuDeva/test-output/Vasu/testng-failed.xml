@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Vasu]">
+  <test name="smoke(failed)">
+    <classes>
+      <class name="com.vasu.testng.AnnotationsTest">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.vasu.testng.AnnotationsTest -->
+      <class name="com.vasu.testng.AnnotationsTest1">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- com.vasu.testng.AnnotationsTest1 -->
+      <class name="com.vasu.testng.AdminLoginTest">
+        <methods>
+          <include name="adminLogin"/>
+        </methods>
+      </class> <!-- com.vasu.testng.AdminLoginTest -->
+    </classes>
+  </test> <!-- smoke(failed) -->
+</suite> <!-- Failed suite [Vasu] -->

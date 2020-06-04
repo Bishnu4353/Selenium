@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="61975" started-at="2020-05-28T00:57:56Z" finished-at="2020-05-28T00:58:58Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="61975" started-at="2020-05-28T00:57:56Z" finished-at="2020-05-28T00:58:58Z">
+      <class name="com.vasu.testng.EmpCreationTest">
+        <test-method status="PASS" signature="appLaunch()[pri:0, instance:com.vasu.testng.EmpCreationTest@2eee9593]" name="appLaunch" is-config="true" duration-ms="15445" started-at="2020-05-28T06:27:40Z" finished-at="2020-05-28T06:27:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appLaunch -->
+        <test-method status="PASS" signature="appLogin()[pri:0, instance:com.vasu.testng.EmpCreationTest@2eee9593]" name="appLogin" is-config="true" duration-ms="5894" started-at="2020-05-28T06:27:56Z" finished-at="2020-05-28T06:28:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appLogin -->
+        <test-method status="PASS" signature="empCreation(java.lang.String, java.lang.String)[pri:0, instance:com.vasu.testng.EmpCreationTest@2eee9593]" name="empCreation" duration-ms="27340" started-at="2020-05-28T06:28:02Z" data-provider="getData" finished-at="2020-05-28T06:28:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[vasu456]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[selenium34]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- empCreation -->
+        <test-method status="PASS" signature="empCreation(java.lang.String, java.lang.String)[pri:0, instance:com.vasu.testng.EmpCreationTest@2eee9593]" name="empCreation" duration-ms="27117" started-at="2020-05-28T06:28:29Z" data-provider="getData" finished-at="2020-05-28T06:28:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[vasu456678]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[selenium34]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- empCreation -->
+        <test-method status="PASS" signature="appLogout()[pri:0, instance:com.vasu.testng.EmpCreationTest@2eee9593]" name="appLogout" is-config="true" duration-ms="1567" started-at="2020-05-28T06:28:56Z" finished-at="2020-05-28T06:28:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appLogout -->
+        <test-method status="PASS" signature="appClose()[pri:0, instance:com.vasu.testng.EmpCreationTest@2eee9593]" name="appClose" is-config="true" duration-ms="1362" started-at="2020-05-28T06:28:58Z" finished-at="2020-05-28T06:28:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appClose -->
+      </class> <!-- com.vasu.testng.EmpCreationTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
