@@ -1,0 +1,86 @@
+
+Cucumber:
+========
+
+Pre-Defined Frameworks
+	JUnit----> (TDD--> Test driven framework)
+	TestNg--> (TDD--> Test driven framework)
+	Cucumber---> (BDD---> Behaviour driven framework)
+User-Defined Frameworks
+	Data driven 
+	Keyword driven
+	Hybrid
+
+Installing Cucumber plug-in for Eclipse:
+
+Eclipse Market Place --> search cucumber ---> install
+	                  --> search natural ---> install
+
+create a maven project--add dependendies in pom.xml file
+create a Features folder in project 
+create the feature file--> right click on Features Folder and select file --> give the name --> extention sholud be .features --> finish
+
+
+Feature File:
+
+Feature File contains all the features of application
+	Application : Stock Accounting
+	  	Features:
+			login---> steps
+			supplier creation--->steps
+			stock categories.....
+			
+To specify the steps in the feature file we need to use special  language called Gherkins
+Feature
+Scenario
+Given
+When
+Add
+Then
+
+For Example:
+	Feature: Stock Accounting Login Feature
+	Description: This feature will test a login functionality
+
+	Scenario: Login with valid userName and Password
+	Given  Open  Browser
+	When Enter the url "Https://webapp.qedge.com"
+	And Enter Username and password
+	And Click on Login
+	Then must Login  Successfully 
+
+Given
+	pre-condition
+When/Add
+	steps
+Then
+	Expected
+
+We have to create stepDefinition package in src/test for Test Scenario
+and create a class loginStepDefinitions --for each step we need to write methods
+
+now right click on features file run as cucumber test for getting the methods 
+go to console--copy --paste in loginStepDefinitions class
+
+create MyTestRunner package in src/test -->create TestRunner class
+
+no need to write anything in test runner class.
+
+we have to write above the test runner class 
+import org.junit.runner.RunWith;
+
+import cucumber.api.CucumberOptions;
+import cucumber.api.junit.Cucumber;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(
+		
+		features="Features",
+		glue="StepDefinitions"
+		
+		)
+
+
+
+
+
